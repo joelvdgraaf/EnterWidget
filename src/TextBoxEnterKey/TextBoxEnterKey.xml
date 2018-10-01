@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="TextBoxEnterKey.widget.TextBoxEnterKey" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>TextBoxEnterKey</name>
+    <description>The description of this widget.</description>
+
+    <icon />
+
+    <properties>
+        <property key="inputValue" type="attribute">
+            <caption>Attribute</caption>
+            <category>Settings</category>
+            <description>The input attribute of the widget.</description>
+            <attributeTypes>
+                <attributeType name="String" />
+				<attributeType name="Integer" />
+				<attributeType name="Long" />
+            </attributeTypes>
+        </property>
+        <property key="mfToExecute" type="microflow" required="true" defaultValue="">
+            <caption>Microflow</caption>
+            <category>Settings</category>
+            <description>The microflow to execute upon hitting the enter key</description>
+            <returnType type="Void" />
+        </property>
+        <property key="async" type="boolean" defaultValue="false">
+            <caption>Asynchronous</caption>
+            <category>Settings</category>    
+            <description>Call microflow asynchronously</description>    
+        </property>
+         <property key="progressBar" type="boolean" defaultValue="false">
+             <caption>Show progress</caption>
+             <category>Settings</category>    
+             <description>Show a progress bar</description>    
+        </property>
+         <property key="progressMsg" type="string" defaultValue="Loading">
+            <caption>Progress message</caption>
+             <category>Settings</category>    
+             <description>Progress bar message (only visible if 'Show progress' is true)</description>    
+        </property>
+		<property key="placeHolderTxt" type="translatableString"  required="false">
+            <caption>Placeholder</caption>
+            <category>Settings</category>
+            <description>Placeholder text on the inputfield.</description>
+        </property>
+    </properties>
+</widget>
+
